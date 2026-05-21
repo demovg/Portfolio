@@ -229,8 +229,8 @@ export function Projects() {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
-                {/* Hover overlay */}
-                <div className="absolute inset-0 flex flex-col justify-end gap-3 bg-gradient-to-t from-background via-background/85 to-background/0 p-5 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100">
+                {/* Hover overlay — desktop only */}
+                <div className="absolute inset-0 hidden flex-col justify-end gap-3 bg-gradient-to-t from-background via-background/85 to-background/0 p-5 opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100 md:flex">
                   <p className="text-sm leading-relaxed text-foreground/90">
                     {p.description}
                   </p>
@@ -269,6 +269,25 @@ export function Projects() {
                       {t}
                     </span>
                   ))}
+                </div>
+                {/* Buttons — mobile only */}
+                <div className="flex flex-wrap gap-2 pt-1 md:hidden">
+                  <a
+                    href={p.demo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-xs font-medium text-primary-foreground"
+                  >
+                    <ExternalLink size={14} /> Live Demo
+                  </a>
+                  <a
+                    href={p.source}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card/80 px-4 py-2 text-xs font-medium transition-colors hover:border-primary hover:text-primary"
+                  >
+                    <Code2 size={14} /> Source Code
+                  </a>
                 </div>
               </div>
             </article>
