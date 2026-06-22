@@ -17,6 +17,7 @@ const certificates = [
   { title: "Programming Fundamentals", issuer: "Udacity", year: "2024", href: "/Udacity_Programming_Fundamentals_Certificate.pdf" },
   { title: "Web Development Certification", issuer: "freeCodeCamp", year: "2024", href: "/freecodecamp.PNG" },
   { title: "DSA / Web Development", issuer: "GeeksforGeeks", year: "2024", href: "/GeeksforGeeks.pdf" },
+  { title: "Udemy Certificate", issuer: "Udemy", year: "2024", href: "/Udemy_Certificate.pdf" },
 ];
 
 const projects = [
