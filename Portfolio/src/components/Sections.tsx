@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowDown, Award, Code2, Download, ExternalLink, Github, Linkedin, Mail, Send } from "lucide-react";
 import portrait from "@/assets/CV_Image.png";
 import melkam from "@/assets/project-melkam.jpg";
-import realestate from "@/assets/project-realestate.jpg";
+import realestate from "@/assets/project-realestate2.jpg";
 import cafe from "@/assets/project-cafe.jpg";
 import { toast } from "sonner";
 
